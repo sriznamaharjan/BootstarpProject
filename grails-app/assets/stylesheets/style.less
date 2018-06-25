@@ -1,0 +1,157 @@
+@maroon-color: #a50d2e;
+@white-color: #ffffff;
+@black-color: #000000;
+@gray-color: #d3d3d3;
+@lightgray-color: #eeeeee;
+@lightblue-color: #d9edf7;
+@padding-right-10: 10px;
+
+@media (max-width: 767px) {
+  .navbar .navbar-nav > li > a {
+    border-right: none;
+    border-bottom: 1px solid @white-color;
+  }
+}
+
+.bg-img{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+i {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  vertical-align: top;
+  .bg-img
+}
+
+.main-content {
+  background-color: @gray-color;
+}
+
+.navbar {
+  background-color: @maroon-color;
+  border-bottom: 1px solid @white-color;
+  margin-bottom: 0px;
+  .navbar-nav > li > a {
+    border-right: 1px solid @white-color;
+    color: @white-color;
+    padding: 20px;
+    &:hover {
+      background-color: @black-color;
+      color: @white-color;
+    }
+  }
+}
+
+.navbar-nav > li > ul {
+  color:@white-color;
+  .navbar
+}
+
+.navbar-toggle {
+  border: 1px solid @white-color;
+  .icon-bar {
+    background-color: @white-color;
+  }
+}
+
+.table-striped > tbody > tr:nth-of-type(even) {
+  background-color: @white-color;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: @lightblue-color;
+}
+
+thead {
+  background-color: @lightgray-color;
+}
+
+.second-nav {
+  margin: 20px 0 10px 0;
+  button {
+    color: @black-color;
+    background-color: @lightgray-color;
+    border-color: @maroon-color;
+    &:hover {
+      background-color: @black-color;
+      color: @white-color;
+      border-color: @maroon-color;
+    }
+  }
+
+  .active {
+    background-color: @maroon-color;
+    border-color: @maroon-color;
+    color: @white-color;
+    &:hover {
+      background-color: @black-color;
+      color: @white-color;
+      border-color: @maroon-color;
+    }
+  }
+
+  h4 {
+    color: @white-color;
+  }
+}
+
+.icon-wrap{
+  background-color:@white-color;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.report-period {
+
+  .report-period-text {
+    padding: 7px;
+    border-radius: 3px;
+    background-color: @white-color;
+  }
+
+  .report-time {
+    padding: 5px;
+    border-radius: 3px;
+    margin-right: @padding-right-10;
+    background-color: @maroon-color;
+    display: inline-block;
+    .icon-arrow{
+      background-image:url("../images/two-down-arrows.png");
+      .bg-img
+    }
+
+  }
+}
+
+.report-detail {
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+.report-detail ul.row {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.icon-info {
+  background-image: url("../images/info.png");
+}
+.icon-word {
+  background-image: url("../images/word.png");
+}
+.icon-pdf {
+  background-image: url("../images/pdf.png");
+}
+.icon-excel {
+  background-image: url("../images/excel.png");
+}
+
+
+
